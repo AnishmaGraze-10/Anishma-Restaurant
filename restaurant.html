@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anishma Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: url('restaurant-hero.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-section::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .btn-custom {
+            background-color: #f8b400;
+            color: #000;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: #d99a00;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .about-section img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Menu Section */
+        .menu-section {
+            padding: 60px 0;
+        }
+
+        .menu-item {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px #f8b400;
+        }
+
+        /* Testimonials */
+        .testimonial {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="logo.jpg" alt="Restaurant Logo" width="40"> Anishma Restaurant
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <a href="reserve.html" class="btn btn-warning ms-3">Reserve Table</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="hero-content text-center">
+        <h1>Welcome to Anishma Restaurant</h1>
+        <p class="lead">Experience exquisite flavors and an unforgettable dining experience.</p>
+        <a href="menu.html" class="btn btn-custom btn-lg">View Menu</a>
+    </div>
+</div>
+
+<!-- About Section -->
+<div class="container about-section">
+    <h2 class="text-warning">About Us</h2>
+    <p class="lead">At Anishma Restaurant, we serve delicious, fresh, and high-quality meals that will leave you coming back for more. Enjoy our cozy ambiance and top-notch service.</p>
+    <img src="hotel.png" alt="Restaurant Interior">
+</div>
+
+<!-- Menu Preview Section -->
+<div class="container menu-section">
+    <h2 class="text-warning text-center">Popular Dishes</h2>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="menu-item">
+                <img src="steak.jpg" alt="Dish 1">
+                <h4>Grilled Steak</h4>
+                <p>Perfectly cooked steak with a side of mashed potatoes.</p>
+                <p class="text-warning">₹399</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="menu-item">
+                <img src="seafood.jpg" alt="Dish 2">
+                <h4>Seafood Pasta</h4>
+                <p>Fresh shrimp and scallops tossed in a creamy sauce.</p>
+                <p class="text-warning">₹199</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="menu-item">
+                <img src="lava.jpg" alt="Dish 3">
+                <h4>Chocolate Lava Cake</h4>
+                <p>Rich and warm chocolate cake with a melting center.</p>
+                <p class="text-warning">₹299</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Testimonials Section -->
+<div class="container">
+    <h2 class="text-warning text-center">What Our Customers Say</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="testimonial">
+                <p>"Absolutely the best restaurant in town! Amazing food and great service."</p>
+                <strong>Subi</strong>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="testimonial">
+                <p>"The ambiance and the flavors are outstanding. Highly recommend!"</p>
+                <strong>Zara</strong>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="testimonial">
+                <p>"Loved the seafood pasta! Will definitely be back for more."</p>
+                <strong> Graze</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    &copy; Anishma Restaurant. All Rights Reserved.
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Anishma Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar {
+            background-color: #000;
+        }
+        .hero-section {
+            background: url('about-hero.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+        .hero-section::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #f8b400;
+            margin-top: 50px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #f8b400;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .about-section, .team-section, .contact-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .about-text {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        .team-card {
+            background-color: #222;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .team-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px #f8b400;
+        }
+        .team-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.jpg" alt="Restaurant Logo" width="40"> Anishma Restaurant
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <a href="reserve.html" class="btn btn-warning ms-3">Reserve Table</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="hero-content">
+        <h1>About Anishma Restaurant</h1>
+        <p>Serving Excellence Since 2010</p>
+    </div>
+</div>
+
+<!-- About Section -->
+<div class="container about-section">
+    <h2 class="section-title">Our Story</h2>
+    <p class="about-text">Anishma Restaurant was founded in 2010 with the mission of bringing exquisite flavors to our customers. Our chefs use the finest ingredients to craft dishes that are both innovative and deeply rooted in tradition.</p>
+</div>
+
+<!-- Meet Our Team -->
+<div class="container team-section">
+    <h2 class="section-title">Meet Our Chefs</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="team-card">
+                <img src="chef.jpg" alt="Chef John">
+                <h4>Chef John Doe</h4>
+                <p>Head Chef & Founder</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="team-card">
+                <img src="chef1.jpg" alt="Chef Emma">
+                <h4>Chef Emma Smith</h4>
+                <p>Pastry Specialist</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="team-card">
+                <img src="chef2.jpg" alt="Chef Mark">
+                <h4>Chef Mark Wilson</h4>
+                <p>Sous Chef</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div class="container contact-section">
+    <h2 class="section-title">Get in Touch</h2>
+    <p>Email: <a href="mailto:anishmarestaurant@gmail.com" style="color: #f8b400;">anishmarestaurant@gmail.com</a></p>
+    <p>Phone: <a href="tel:+91897640978" style="color: #f8b400;">+91897640978</a></p>
+    <p>Address: Rainbow Colony, Nagercoil City,KannyaKumari Dist.</p>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    &copy; Anishma Restaurant. All Rights Reserved.
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
